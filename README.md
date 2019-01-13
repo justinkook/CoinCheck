@@ -4,7 +4,7 @@ This project is for learning purposes only.
 
 A real-time feed of cryptocurrency prices for BTC, ETH, and LTC with historical prices from the last 5 days.
 
-Built using MongoDB, Express, React, and Node.js with Pusher-channel API for real time feed.
+Built using MongoDB, Express, React, and Node.js with Pusher-channel websockets API for real time feed.
 
 ## Getting Started
 
