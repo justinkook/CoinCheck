@@ -14,7 +14,7 @@ class App extends Component {
                                 <span className="navbar-item">CoinCheck</span>
                             </div>
                             <div className="navbar-end">
-                                <a className="navbar-item" href="https://github.com/justinkook" target="_blank" rel="noopener noreferrer">Github</a>
+                                <a className="navbar-item" href="https://github.com/justinkook/CoinCheck" target="_blank" rel="noopener noreferrer">Github</a>
                             </div>
                         </nav>
                     </header>
