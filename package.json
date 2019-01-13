@@ -6,21 +6,25 @@
     "axios": "^0.16.2",
     "body-parser": "^1.18.3",
     "express": "^4.16.4",
+    "if-env": "^1.0.4",
     "npm-run-all": "^4.1.1",
     "pusher": "^1.5.1",
     "pusher-js": "^4.1.0"
   },
   "scripts": {
-    "start:client": "cd client && yarn start",
-    "start:server": "node server.js",
-    "start": "node server.js && cd client && yarn start",
-    "build": "react-scripts build",
-    "test": "react-scripts test --env=jsdom",
-    "eject": "react-scripts eject"
+    "start": "if-env NODE_ENV=production && yarn run start:prod || yarn run start:dev",
+    "start:prod": "node server.js",
+    "start:dev": "concurrently \"node --ignore 'client/*'\" \"yarn run client\"",
+    "client": "cd client && yarn run start",
+    "install": "cd client && yarn install",
+    "build": "cd client && yarn build",
+    "heroku-postbuild": "yarn run build"
   },
   "description": "This project was bootstrapped with [Create React App](https://github.com/facebookincubator/create-react-app).",
   "main": "server.js",
-  "devDependencies": {},
+  "devDependencies": {
+    "concurrently": "^4.1.0"
+  },
   "keywords": [],
   "author": "Justin Kook",
   "license": "MIT"
