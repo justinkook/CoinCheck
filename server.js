@@ -31,9 +31,9 @@ app.use((req, res, next) => {
 
 const PORT = process.env.PORT || 5000;
 
-app.get('/', (req, res) => {
-    res.send('Welcome')
-})
+if (process.env.NODE_ENV === "production") {
+    app.use(express.static("client/build"));
+}
 
 app.post('/prices/new', (req, res) => {
     pusher.trigger('coin-prices', 'prices', {
