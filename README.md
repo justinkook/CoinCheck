@@ -6,7 +6,7 @@ Built using MongoDB, Express, React, and Node.js with Pusher for real time feed.
 
 # Getting Started
 
-1. Checkout the repo
+**1. Checkout the repo**
 
 ```
 git clone git@github.com:bitpay/bitcore.git
@@ -14,7 +14,7 @@ git checkout master
 yarn install
 ```
 
-2. Add pusher credentials to server.js and Today.js
+**2. Add pusher credentials to server.js and Today.js**
 
 Inside server.js
 
@@ -37,7 +37,7 @@ this.pusher = new Pusher('appId', {
 		});
 ```
 
-3. Start server and client
+**3. Start server and client**
 
 ```
 yarn start
@@ -47,9 +47,9 @@ yarn start
 
 ### Get Latest prices of BTC, ETH, and LTC in United States Dollars.
 
-GET 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD'
+**GET** ```https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD```
 
-@Return
+**@Return**
 
 ```
 {"BTC":{"USD":3548.77},"ETH":{"USD":115.91},"LTC":{"USD":30.1}}
@@ -57,9 +57,9 @@ GET 'https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=U
 
 ### Post coin prices to the Pusher channel to emit to everyone subscribed to the price channel.
 
-POST '/prices/new'
+**POST** ```/prices/new```
 
-@Params
+**@Params**
 
 ```
 {
@@ -67,13 +67,9 @@ POST '/prices/new'
 };
 ```
 
-@Return
+**@Return**
 
-Status 200
-
-## Contributing
-
-See [CONTRIBUTING.md](https://github.com/bitpay/bitcore) on the main bitcore repo for information about how to contribute.
+```Status 200```
 
 ## License
 
