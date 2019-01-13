@@ -47,7 +47,7 @@ yarn start
 
 ## API Routes
 
-### Get Latest prices of BTC, ETH, and LTC in United States Dollars.
+**Get Latest prices of BTC, ETH, and LTC in United States Dollars.**
 
 **GET** ```https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD```
 
@@ -57,7 +57,7 @@ yarn start
 {"BTC":{"USD":3548.77},"ETH":{"USD":115.91},"LTC":{"USD":30.1}}
 ```
 
-### Post coin prices to the Pusher channel to emit to everyone subscribed to the price channel.
+**Post coin prices to the Pusher channel to emit to everyone subscribed to the price channel.**
 
 **POST** ```/prices/new```
 
@@ -75,7 +75,7 @@ yarn start
 
 ## Acknowledgments
 
-* Original Repo
+Original Repo
  * https://github.com/yomete/pushercoins
-* Tutorial
+Tutorial
  * https://pusher.com/tutorials/pwa-react
