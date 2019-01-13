@@ -14,14 +14,14 @@ class App extends Component {
                                 <span className="navbar-item">PusherCoins</span>
                             </div>
                             <div className="navbar-end">
-                                <a className="navbar-item" href="https://pusher.com" target="_blank" rel="noopener noreferrer">Pusher.com</a>
+                                <a className="navbar-item" href="https://github.com/justinkook" target="_blank" rel="noopener noreferrer">Github</a>
                             </div>
                         </nav>
                     </header>
                 </div>
                 <section className="results--section">
                     <div className="container">
-                        <h1>PusherCoins is a realtime price information about<br></br> BTC, ETH and LTC.</h1>
+                        <h1>CoinCheck is a realtime price information about<br></br> BTC, ETH and LTC.</h1>
                     </div>
                     <div className="results--section__inner">
                         <Today />
