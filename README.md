@@ -1,10 +1,12 @@
 # CoinCheck
 
+This project is for learning purposes only.
+
 A real-time feed of cryptocurrency prices for BTC, ETH, and LTC with historical prices from the last 5 days.
 
 Built using MongoDB, Express, React, and Node.js with Pusher for real time feed.
 
-# Getting Started
+## Getting Started
 
 **1. Checkout the repo**
 
@@ -43,7 +45,7 @@ this.pusher = new Pusher('appId', {
 yarn start
 ```
 
-# API Routes
+## API Routes
 
 ### Get Latest prices of BTC, ETH, and LTC in United States Dollars.
 
@@ -71,8 +73,9 @@ yarn start
 
 ```Status 200```
 
-## License
+## Acknowledgments
 
-Code released under [the MIT license](https://github.com/justinkook/CoinCheck/blob/master/LICENSE).
-
-Copyright 2019 Justin Kook.
+* Original Repo
+ * https://github.com/yomete/pushercoins
+* Tutorial
+ * https://pusher.com/tutorials/pwa-react
