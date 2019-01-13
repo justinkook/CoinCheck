@@ -11,7 +11,7 @@ class App extends Component {
                     <header className="container">
                         <nav className="navbar">
                             <div className="navbar-brand">
-                                <span className="navbar-item">PusherCoins</span>
+                                <span className="navbar-item">CoinCheck</span>
                             </div>
                             <div className="navbar-end">
                                 <a className="navbar-item" href="https://github.com/justinkook" target="_blank" rel="noopener noreferrer">Github</a>
