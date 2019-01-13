@@ -11,7 +11,7 @@ Built using MongoDB, Express, React, and Node.js with Pusher for real time feed.
 **1. Checkout the repo**
 
 ```
-git clone git@github.com:bitpay/bitcore.git
+git clone https://github.com/justinkook/CoinCheck.git
 git checkout master
 yarn install
 ```
