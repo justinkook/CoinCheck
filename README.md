@@ -4,14 +4,14 @@ This project is for learning purposes only.
 
 A real-time feed of cryptocurrency prices for BTC, ETH, and LTC with historical prices from the last 5 days.
 
-Built using MongoDB, Express, React, and Node.js with Pusher for real time feed.
+Built using MongoDB, Express, React, and Node.js with Pusher-channel websockets API for real time feed.
 
 ## Getting Started
 
 **1. Checkout the repo**
 
 ```
-git clone git@github.com:bitpay/bitcore.git
+git clone https://github.com/justinkook/CoinCheck.git
 git checkout master
 yarn install
 ```
