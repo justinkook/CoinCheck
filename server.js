@@ -29,7 +29,7 @@ app.use((req, res, next) => {
     next()
 })
 
-app.set('port', (5000))
+const PORT = process.env.PORT || 5000;
 
 app.get('/', (req, res) => {
     res.send('Welcome')
@@ -42,6 +42,6 @@ app.post('/prices/new', (req, res) => {
     res.sendStatus(200);
 })
 
-app.listen(app.get('port'), () => {
-    console.log('Node app is running on port', app.get('port'))
+app.listen(PORT, () => {
+    console.log(`Node app is running on port ${PORT}`)
 })
