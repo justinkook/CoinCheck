@@ -49,9 +49,9 @@ class Today extends Component {
 		if (!navigator.onLine) {
 			return this.restoreStateFromLocalStorage();
 		}
-		this.pusher = new Pusher('APP_KEY', {
-			cluster: 'YOUR_CLUSTER',
-			encrypted: true
+		this.pusher = new Pusher('c0783d10bbc556b7b275', {
+			cluster: 'us2',
+			forceTLS: true
 		});
 		this.prices = this.pusher.subscribe('coin-prices');
 		axios.get('https://min-api.cryptocompare.com/data/pricemulti?fsyms=BTC,ETH,LTC&tsyms=USD')

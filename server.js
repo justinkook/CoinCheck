@@ -4,13 +4,13 @@ const bodyParser = require('body-parser')
 const app = express()
 const Pusher = require('pusher')
 
-const pusher = new Pusher({
-    appId: 'APP_ID',
-    key: 'YOUR_KEY',
-    secret: 'YOUR_SECRET',
-    cluster: 'YOUR_CLUSTER',
+var pusher = new Pusher({
+    appId: '690501',
+    key: 'c0783d10bbc556b7b275',
+    secret: '9cf8592cc237bbeeb937',
+    cluster: 'us2',
     encrypted: true
-})
+});
 
 app.use(bodyParser.json())
 app.use(bodyParser.urlencoded({ extended: false }))
@@ -36,7 +36,7 @@ app.get('/', (req, res) => {
 })
 
 app.post('/prices/new', (req, res) => {
-    pusher.trigger( 'coin-prices', 'prices', {
+    pusher.trigger('coin-prices', 'prices', {
         prices: req.body.prices
     });
     res.sendStatus(200);
