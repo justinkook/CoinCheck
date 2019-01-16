@@ -2,6 +2,7 @@ import React, { Component } from 'react';
 import './App.css';
 import Today from './Today/Today'
 import History from './History/History'
+import AreaChart from './Chart/AreaChart';
 
 class App extends Component {
     render() {
@@ -21,11 +22,11 @@ class App extends Component {
                 </div>
                 <section className="results--section">
                     <div className="container">
-                        <h1>CoinCheck is a realtime price information about<br></br> BTC, ETH and LTC.</h1>
+                        <h1>Core Performance (BTC)</h1>
                     </div>
                     <div className="results--section__inner">
+                        <AreaChart />
                         <Today />
-                        <History />
                     </div>
                 </section>
             </div>

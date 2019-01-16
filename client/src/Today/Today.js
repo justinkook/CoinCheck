@@ -5,10 +5,6 @@ import Pusher from 'pusher-js'
 import { CryptoPrice } from "./CryptoPrice";
 
 class Today extends Component {
-	/**
-	 * If you're not using the props to initialize your state, you can
-	 * just define the state like this and remove the constructor
-	 */
 	state = {
 		btcprice: 0, // I guess you can keep it an empty string, I just think its better to give it a default value of 0 since they're numbers
 		ltcprice: 0,
@@ -16,7 +12,7 @@ class Today extends Component {
 	};
 
 	sendPricePusher(data) {
-		axios.post('/prices/new', {
+		axios.post('http://localhost:5000/prices/new', {
 			prices: data
 		})
 			.catch(console.error) // if you do (x => yourFunc(x)) you can replace it with (yourFunc)
